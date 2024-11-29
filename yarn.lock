@@ -14489,7 +14489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.0.0, @types/node@npm:^20.1.1, @types/node@npm:^20.10.5":
+"@types/node@npm:^20.1.1":
   version: 20.17.9
   resolution: "@types/node@npm:20.17.9"
   dependencies:
@@ -15876,7 +15876,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@testing-library/react": "npm:^16.0.0"
     "@types/d3": "npm:^7.4.3"
-    "@types/node": "npm:^20.0.0"
+    "@types/node": "npm:^22.0.0"
     "@types/react-dom": "npm:*"
     "@types/uuid": "npm:^10.0.0"
     backstage-plugin-techdocs-addon-mermaid: "npm:^0.14.0"
@@ -31596,7 +31596,7 @@ __metadata:
     "@playwright/test": "npm:^1.32.3"
     "@spotify/prettier-config": "npm:^15.0.0"
     "@types/lodash": "npm:^4.14.202"
-    "@types/node": "npm:^20.10.5"
+    "@types/node": "npm:^22.0.0"
     eslint: "npm:^8.6.0"
     fs-extra: "npm:11.2.0"
     husky: "npm:^9.0.0"
