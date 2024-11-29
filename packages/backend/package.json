@@ -43,7 +43,7 @@
     "@frontside/backstage-plugin-graphql-backend": "^0.1.2",
     "@frontside/backstage-plugin-graphql-backend-module-catalog": "^0.3.0",
     "@internal/plugin-catalog-backend-module-backstage": "workspace:^",
-    "app": "^0.0.0",
+    "app": "^0.1.0",
     "better-sqlite3": "^11.0.0"
   },
   "devDependencies": {
