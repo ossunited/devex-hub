@@ -55,10 +55,12 @@ jobs:
       - name: Generate TechDocs
         run: techdocs-cli generate --no-docker --legacyCopyReadmeMdToIndexMd --verbose
 
-      - name: Login to Google Cloud Services
-        uses: 'google-github-actions/auth@6fc4af4b145ae7821d527454aa9bd537d1f2dc5f' # v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          credentials_json: ${{ secrets.TECHDOCS_GCS_CREDENTIALS_JSON }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Publish TechDocs
-        run: techdocs-cli publish --publisher-type googleGcs --storage-name ${{ secrets.TECHDOCS_GCS_BUCKET }} --entity default/component/backstage
+        run: techdocs-cli publish --publisher-type awsS3 --storage-name ${{ secrets.TECHDOCS_S3_BUCKET }} --entity default/component/backstage
