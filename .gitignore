@@ -52,3 +52,4 @@ e2e-test-report/
 
 # Local TechDocs
 packages/backend/techdocs/**
+/github-app-devopex-hub-github-credentials.yaml

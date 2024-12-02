@@ -8,6 +8,8 @@ backend.add(import('@backstage/plugin-auth-backend-module-github-provider'));
 backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
 backend.add(import('@backstage-community/plugin-badges-backend'));
 backend.add(import('@backstage/plugin-catalog-backend'));
+backend.add(import('@backstage/plugin-catalog-backend-module-github'));
+backend.add(import('@backstage/plugin-catalog-backend-module-github-org'));
 backend.add(import('@backstage/plugin-catalog-backend-module-logs'));
 backend.add(import('@internal/plugin-catalog-backend-module-backstage'));
 backend.add(
