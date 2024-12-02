@@ -14,12 +14,12 @@ Here is an example:
 
 1. A list item
 2. Another list item
-  1. The first sub item
-  2. Another sub item
-    1. Oh wait, we have a deeply nested item here
-    2. Why not another, you might need it!
-  3. A third and final sub item
-3. The last item in this list
+3. The first sub item
+4. Another sub item
+5. Oh wait, we have a deeply nested item here
+6. Why not another, you might need it!
+7. A third and final sub item
+8. The last item in this list
 
 ## Markdown
 
@@ -28,10 +28,10 @@ Here is the Markdown:
 ```markdown
 1. A list item
 2. Another list item
-  1. The first sub item
-  2. Another sub item
-    1. Oh wait, we have a deeply nested item here
-    2. Why not another, you might need it!
-  3. A third and final sub item
-3. The last item in this list
+3. The first sub item
+4. Another sub item
+5. Oh wait, we have a deeply nested item here
+6. Why not another, you might need it!
+7. A third and final sub item
+8. The last item in this list
 ```

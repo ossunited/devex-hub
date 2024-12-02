@@ -3,7 +3,7 @@ import { badgesPlugin } from './plugins';
 import {
   AlertDisplay,
   OAuthRequestDialog,
-  ProxiedSignInPage,
+  SignInPage,
 } from '@backstage/core-components';
 import { AppRouter, FeatureFlagged, FlatRoutes } from '@backstage/core-app-api';
 import {
@@ -57,12 +57,24 @@ import {
 } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
 import { SignalsDisplay } from '@backstage/plugin-signals';
+import { githubAuthApiRef } from '@backstage/core-plugin-api';
 
 const app = createApp({
   apis,
   plugins: [badgesPlugin],
   components: {
-    SignInPage: props => <ProxiedSignInPage {...props} provider="guest" />,
+    SignInPage: props => (
+      <SignInPage
+        {...props}
+        auto
+        provider={{
+          id: 'github',
+          title: 'GitHub',
+          message: 'Sign in using GitHub',
+          apiRef: githubAuthApiRef,
+        }}
+      />
+    ),
   },
   bindRoutes({ bind }) {
     bind(catalogPlugin.externalRoutes, {
