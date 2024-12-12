@@ -166,13 +166,6 @@ export const apertureTheme = createUnifiedTheme({
         },
       },
     },
-    CatalogReactUserListPicker: {
-      styleOverrides: {
-        title: {
-          textTransform: 'none',
-        },
-      },
-    },
     MuiAlert: {
       styleOverrides: {
         root: {

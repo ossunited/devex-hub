@@ -39,6 +39,7 @@ backend.add(import('./extensions/docsBuildStrategy'));
 backend.add(import('@backstage-community/plugin-todo-backend'));
 
 backend.add(import('@backstage/plugin-events-backend'));
+backend.add(import('@backstage/plugin-events-backend-module-aws-sqs'));
 backend.add(import('@backstage/plugin-signals-backend'));
 backend.add(import('@backstage/plugin-notifications-backend'));
 
