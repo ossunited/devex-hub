@@ -43,4 +43,6 @@ backend.add(import('@backstage/plugin-events-backend-module-aws-sqs'));
 backend.add(import('@backstage/plugin-signals-backend'));
 backend.add(import('@backstage/plugin-notifications-backend'));
 
+// third party plugins
+backend.add(import('@jiteshy/backstage-plugin-synergy-backend'));
 backend.start();
