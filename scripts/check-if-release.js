@@ -2,7 +2,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const fs = require('fs-extra');
-const fetch = require('node-fetch');
 const { EOL } = require('os');
 
 async function getBackstageVersion() {
@@ -15,6 +14,9 @@ async function main() {
   if (!commitSha) {
     throw new Error(`Argument must be ${script} <commit-sha>`);
   }
+
+  // Dynamically import node-fetch
+  const fetch = (await import('node-fetch')).default;
 
   // Check to see if commit has changes to the backstage.json file
   const response = await fetch(
