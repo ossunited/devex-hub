@@ -11427,14 +11427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/api@npm:^1.0.1, @opentelemetry/api@npm:^1.4.0":
-  version: 1.7.0
-  resolution: "@opentelemetry/api@npm:1.7.0"
-  checksum: 10/bcf7afa7051dcd4583898a68f8a57fb4c85b5cedddf7b6eb3616595c0b3bcd7f5448143b8355b00935a755de004d6285489f8e132f34127efe7b1be404622a3e
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/api@npm:^1.9.0":
+"@opentelemetry/api@npm:^1.0.1, @opentelemetry/api@npm:^1.4.0, @opentelemetry/api@npm:^1.9.0":
   version: 1.9.0
   resolution: "@opentelemetry/api@npm:1.9.0"
   checksum: 10/a607f0eef971893c4f2ee2a4c2069aade6ec3e84e2a1f5c2aac19f65c5d9eeea41aa72db917c1029faafdd71789a1a040bdc18f40d63690e22ccae5d7070f194
@@ -15672,11 +15665,11 @@ __metadata:
   linkType: hard
 
 "@types/react-dom@npm:^18.2.0":
-  version: 18.3.1
-  resolution: "@types/react-dom@npm:18.3.1"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: 10/33f9ba79b26641ddf00a8699c30066b7e3573ab254e97475bf08f82fab83a6d3ce8d4ebad86afeb49bb8df3374390a9ba93125cece33badc4b3e8f7eac3c84d8
+  version: 18.3.5
+  resolution: "@types/react-dom@npm:18.3.5"
+  peerDependencies:
+    "@types/react": ^18.0.0
+  checksum: 10/02095b326f373867498e0eb2b5ebb60f9bd9535db0d757ea13504c4b7d75e16605cf1d43ce7a2e67893d177b51db4357cabb2842fb4257c49427d02da1a14e09
   languageName: node
   linkType: hard
 
@@ -15711,12 +15704,12 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:^18.2.0":
-  version: 18.3.12
-  resolution: "@types/react@npm:18.3.12"
+  version: 18.3.16
+  resolution: "@types/react@npm:18.3.16"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/c9bbdfeacd5347d2240e0d2cb5336bc57dbc1b9ff557b6c4024b49df83419e4955553518169d3736039f1b62608e15b35762a6c03d49bd86e33add4b43b19033
+  checksum: 10/971b4f46af9aeda85326000ba4a78973db6a1f11e10665c014e1274a68ae801469f057b56d850512694cf04a69cc264c07e6a507b4613874e8bf6ab4df7904f1
   languageName: node
   linkType: hard
 
@@ -22537,17 +22530,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:3.3.2":
+"flatted@npm:3.3.2, flatted@npm:^3.2.7, flatted@npm:^3.2.9":
   version: 3.3.2
   resolution: "flatted@npm:3.3.2"
   checksum: 10/ac3c159742e01d0e860a861164bcfd35bb567ccbebb8a0dd041e61cf3c64a435b917dd1e7ed1c380c2ebca85735fb16644485ec33665bc6aafc3b316aa1eed44
-  languageName: node
-  linkType: hard
-
-"flatted@npm:^3.2.7, flatted@npm:^3.2.9":
-  version: 3.3.1
-  resolution: "flatted@npm:3.3.1"
-  checksum: 10/7b8376061d5be6e0d3658bbab8bde587647f68797cf6bfeae9dea0e5137d9f27547ab92aaff3512dd9d1299086a6d61be98e9d48a56d17531b634f77faadbc49
   languageName: node
   linkType: hard
 
