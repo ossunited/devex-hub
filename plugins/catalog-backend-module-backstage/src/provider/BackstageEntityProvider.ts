@@ -12,7 +12,6 @@ import {
 } from '@backstage/plugin-catalog-node';
 import lodash from 'lodash';
 import yaml from 'yaml';
-import fetch from 'node-fetch';
 import * as uuid from 'uuid';
 import { GithubRepository, PackageJson } from '../types';
 import { ComponentEntity, Entity } from '@backstage/catalog-model';
@@ -234,6 +233,7 @@ export class BackstageEntityProvider implements EntityProvider {
 
     // TODO: (awanlin) - Default page size is 30, there are 23 repos as of April 12, 2024
     const ghApiUrl = `https://api.github.com/orgs/${defaults.organization}/repos`;
+    const fetch = (await import('node-fetch')).default;
     const response = await fetch(ghApiUrl, {
       headers: {
         ...credentials?.headers,
