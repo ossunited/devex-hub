@@ -2,7 +2,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const fs = require('fs-extra');
-const fetch = require('node-fetch');
 const { EOL } = require('os');
 
 async function getBackstageVersion() {
@@ -11,6 +10,7 @@ async function getBackstageVersion() {
 }
 
 async function getLatestRelease() {
+  const fetch = (await import('node-fetch')).default;
   const response = await fetch(
     'https://api.github.com/repos/backstage/backstage/releases/latest',
   );
@@ -19,6 +19,7 @@ async function getLatestRelease() {
 }
 
 async function getLatestPreRelease() {
+  const fetch = (await import('node-fetch')).default;
   const response = await fetch(
     'https://api.github.com/repos/backstage/backstage/releases',
   );
