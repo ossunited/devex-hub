@@ -58,7 +58,7 @@ import {
 import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
 import { SignalsDisplay } from '@backstage/plugin-signals';
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
-import { SynergyPage } from '@jiteshy/backstage-plugin-synergy';
+import { SynergyPage } from '@opensource-sig/backstage-plugin-synergy';
 
 const app = createApp({
   apis,

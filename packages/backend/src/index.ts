@@ -44,5 +44,5 @@ backend.add(import('@backstage/plugin-signals-backend'));
 backend.add(import('@backstage/plugin-notifications-backend'));
 
 // third party plugins
-backend.add(import('@jiteshy/backstage-plugin-synergy-backend'));
+backend.add(import('@opensource-sig/backstage-plugin-synergy-backend'));
 backend.start();
