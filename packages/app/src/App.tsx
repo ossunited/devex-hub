@@ -178,7 +178,7 @@ const routes = (
     </Route>
     ;
     <Route path="/explore" element={<ExplorePage />} />
-    <Route path="/inner-source" element={<SynergyPage />} />
+    <Route path="/innersource" element={<SynergyPage />} />
     <Route path="/graphiql" element={<GraphiQLPage />} />
     <Route path="/search" element={<SearchPage />}>
       {searchPage}

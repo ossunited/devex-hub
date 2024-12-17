@@ -27,7 +27,7 @@ import { MyGroupsSidebarItem } from '@backstage/plugin-org';
 import GroupIcon from '@material-ui/icons/People';
 import { NotificationsSidebarItem } from '@backstage/plugin-notifications';
 import { SidebarLogo } from './SidebarLogo';
-import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+import SourceIcon from '@mui/icons-material/Source';
 
 export const Root = ({ children }: PropsWithChildren<{}>) => (
   <SidebarPage>
@@ -49,11 +49,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
         <SidebarItem icon={CreateComponentIcon} to="create" text="Create..." />
         <SidebarItem icon={LayersIcon} to="explore" text="Explore" />
-        <SidebarItem
-          icon={DeveloperModeIcon}
-          to="inner-source"
-          text="InnerSource"
-        />
+        <SidebarItem icon={SourceIcon} to="innersource" text="InnerSource" />
       </SidebarGroup>
       <SidebarDivider />
       <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />
