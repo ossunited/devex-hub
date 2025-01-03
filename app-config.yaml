@@ -174,3 +174,14 @@ explore:
       url: '/graphiql'
       image: '/graphiql.png'
       tags: ['graphql', 'dev']
+
+innersource:
+  provider:
+    github:
+      org: ${GITHUB_ORG}
+      host: ${GITHUB_HOST}
+      apiBaseUrl: ${GITHUB_API_BASE_URL}
+      token: ${GITHUB_TOKEN}
+      hideIssues: false
+  catalogBasePath: innersource
+  repoTag: ${GITHUB_REPO_TAG}
