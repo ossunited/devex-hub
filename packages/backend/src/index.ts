@@ -44,5 +44,5 @@ backend.add(import('@backstage/plugin-signals-backend'));
 backend.add(import('@backstage/plugin-notifications-backend'));
 
 // third party plugins
-backend.add(import('@opensource-sig/backstage-plugin-innersource-backend'));
+backend.add(import('@ossunited/backstage-plugin-innersource-backend'));
 backend.start();

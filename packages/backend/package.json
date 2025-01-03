@@ -46,7 +46,7 @@
     "@frontside/backstage-plugin-graphql-backend": "^0.1.2",
     "@frontside/backstage-plugin-graphql-backend-module-catalog": "^0.3.0",
     "@internal/plugin-catalog-backend-module-backstage": "workspace:^",
-    "@opensource-sig/backstage-plugin-innersource-backend": "^1.6.1",
+    "@ossunited/backstage-plugin-innersource-backend": "^1.7.0",
     "app": "^0.0.0",
     "better-sqlite3": "^11.0.0"
   },
