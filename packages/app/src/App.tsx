@@ -58,6 +58,7 @@ import {
 import { Mermaid } from 'backstage-plugin-techdocs-addon-mermaid';
 import { SignalsDisplay } from '@backstage/plugin-signals';
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
+import { SynergyPage } from '@ossunited/backstage-plugin-innersource';
 
 const app = createApp({
   apis,
@@ -177,6 +178,7 @@ const routes = (
     </Route>
     ;
     <Route path="/explore" element={<ExplorePage />} />
+    <Route path="/innersource" element={<SynergyPage />} />
     <Route path="/graphiql" element={<GraphiQLPage />} />
     <Route path="/search" element={<SearchPage />}>
       {searchPage}
